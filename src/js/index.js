@@ -8,8 +8,7 @@ import Home from "./component/home.jsx";    //import your own components
 
 let miContador = 0;
 setInterval(() => {
-    //render your react application
-    ReactDOM.render(<Home contador={miContador}/>, document.querySelector("#app"));
-    miContador++;
+    ReactDOM.render(<Home contador="{miContador}" />, document.querySelector("#app"));
+    miContador += 1;
 }, 1000);
 
