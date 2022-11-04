@@ -1,19 +1,17 @@
 import React from "react";
-import Reloj from "../component/reloj.js";
+import Caja from "../component/caja.js";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
-const Home = () => {
+const Home = (props) => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo! Desde Gitpod</h1>
-			<p><img src={rigoImage} /></p>
-
-			<Reloj />
+		<>
+		<Caja numero = "1" caja = "simbolo" />
+		<div className="miFila">
+				<Caja numero = "1" caja = "simbolo" />
+				<Caja numero = {props.contador} caja = "simbolo" />
+				<Caja numero = "2" caja = "numero" />
 		</div>
+		</>
 	);
 };
 
-export default Home;
+export default Caja;

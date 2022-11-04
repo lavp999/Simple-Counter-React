@@ -10,3 +10,27 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.miFila{
+    background-color: rgb(241, 13, 13);
+}
+
+.cajaSimbolo {
+    width: 50px; 
+    height: 50px; 
+    background-color: rgb(35, 34, 34);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    color: aliceblue;
+}
+
+.cajaNumero{
+    width: 40px; 
+    height: 50px; 
+    background-color: rgb(35, 34, 34);
+    border-radius: 5px;
+    margin: 4px;
+    padding: 5px;
+    color: white;
+}
