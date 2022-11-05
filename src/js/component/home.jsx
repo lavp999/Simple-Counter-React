@@ -47,9 +47,9 @@ const Home = (props) => {
 			</div>
 
 			<div className="miFila" role="toolbar" aria-label="Toolbar with button groups">
-				<button type="button" className="cajaSimbolo" onClick={iniciar}><i className="fas fa-clock"></i></button>
-				<button type="button" className="cajaSimbolo" onClick={parada}><i class="fas fa-stopwatch"></i></button>
-				<button type="button" className="cajaSimbolo" onClick={reanudar}><i className="fas fa-clock"></i></button>
+				<button type="button" className="cajaSimbolo" onClick={iniciar}><i class="fas fa-step-backward"></i></button>
+				<button type="button" className="cajaSimbolo" onClick={parada}><i class="fas fa-hand-paper"></i></button>
+				<button type="button" className="cajaSimbolo" onClick={reanudar}><i class="fas fa-play"></i></button>
 			</div>
 		</>
 	);
