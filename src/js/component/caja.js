@@ -1,11 +1,10 @@
 import React from "react";
-// <div className={props.caja == "simbolo" ? "cajaSimbolo" : "cajaNumero"}>
 
 const Caja = (props) => {
 	return (
         <>
-			<div className="cajaNumero">
-                <h2 className="text-center">wq{props.numero}</h2>
+            <div className={props.caja == "simbolo" ? "cajaSimbolo" : "cajaNumero"}>
+                <h2 className="text-center">{props.caja == "simbolo" ? <i className="fas fa-clock"></i> : props.numero}</h2>
             </div>
         </>
     );

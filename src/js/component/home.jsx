@@ -4,24 +4,21 @@ import Caja from "../component/caja.js";
 // <Caja numero = {props.contador} caja = "simbolo" />
 
 const Home = (props) => {
+	const miNumero = props.contador;
 	return (
-		<><h1>hola</h1>
+		<>
 			<div className="miFila">
-				<div className="cajaSimbolo">
-            	    <h2 className="text-center"><i class="fas fa-clock"></i></h2>
-        	    </div>
-				<div className="cajaNumero">
-            	    <h2 className="text-center">65{props.contador}</h2>
-        	    </div>
-				<div className="cajaNumero">
-            	    <h2 className="text-center">876{props.contador}</h2>
-        	    </div>
-				<div className="cajaNumero">
-            	    <h2 className="text-center">87{props.contador}</h2>
-        	    </div>
+				<Caja numero="" caja="simbolo"/>
+				<Caja numero={Math.floor(miNumero / 1000000)} caja="numero"/>
+				<Caja numero={Math.floor(miNumero / 100000)} caja="numero"/>
+				<Caja numero={Math.floor(miNumero / 10000)} caja="numero"/>
+				<Caja numero={Math.floor(miNumero / 1000)} caja="numero"/>
+				<Caja numero={Math.floor(miNumero / 100)} caja="numero"/>
+				<Caja numero={Math.floor(miNumero / 10)} caja="numero"/>
+				<Caja numero={Math.floor(miNumero)} caja="numero"/>
 			</div>
 		</>
 	);
 };
 
-export default Caja;
+export default Home;
