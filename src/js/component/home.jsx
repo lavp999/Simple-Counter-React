@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import Caja from "../component/caja.js";
 
 const Home = (props) => {
@@ -26,6 +28,12 @@ const Home = (props) => {
 			</div>
 		</>
 	);
+};
+
+Home.propTypes = {
+	miNumero: PropTypes.string,
+	ctaAtras: PropTypes.string,
+	avisarEn: PropTypes.number
 };
 
 export default Home;

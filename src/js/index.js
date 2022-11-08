@@ -13,7 +13,6 @@ setInterval(() => {
     ReactDOM.render(<Home contador={miContador.toString().padStart(cajas,"0") } 
                           cuentaAtras={cuentaAtras.toString().padStart(cajas,"9") } 
                           avisarEn={10}
-                          cajas={cajas}
     />, document.querySelector("#app"));
 
     miContador += 1;
